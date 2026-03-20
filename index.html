@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin J. Jostes</title>
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light") return;
+        document.documentElement.classList.add("dark");
+      })();
+    </script>
     <script type="module" crossorigin src="/assets/index-C_SN5tKD.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BIwHNMkS.css">
   </head>
