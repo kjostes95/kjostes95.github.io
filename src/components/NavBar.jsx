@@ -43,10 +43,12 @@ export const NavBar = () => {
     newMeta.name = "theme-color";
     newMeta.content = isDarkMode ? "#060b15" : "#f8fafc";
     document.head.appendChild(newMeta);
-    // iOS Safari only re-reads theme-color on scroll events; nudge it.
+    // iOS Safari only re-reads theme-color on scroll; nudge across two frames.
     requestAnimationFrame(() => {
-      window.scrollTo(window.scrollX, window.scrollY + 1);
-      window.scrollTo(window.scrollX, window.scrollY - 1);
+      window.scrollBy(0, 1);
+      requestAnimationFrame(() => {
+        window.scrollBy(0, -1);
+      });
     });
   }, [isDarkMode]);
 
