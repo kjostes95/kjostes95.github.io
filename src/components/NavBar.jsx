@@ -44,7 +44,7 @@ export const NavBar = () => {
   return (
     <nav
       className={cn(
-        "fixed inset-x-0 top-0 z-40 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-40 transition-[padding,background-color,box-shadow] duration-300",
         isScrolled
           ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
           : "py-5",
@@ -58,7 +58,7 @@ export const NavBar = () => {
           <span className="relative z-10">
             <span
               className={cn(
-                "text-glow transition-colors duration-300",
+                "text-glow transition-[color,text-shadow] duration-300 ease-linear",
                 isDarkMode ? "text-white" : "text-foreground",
               )}
             >
@@ -74,7 +74,7 @@ export const NavBar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-primary transition-[color] duration-300 ease-linear"
             >
               {item.name}
             </a>
@@ -129,7 +129,7 @@ export const NavBar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-foreground/80 hover:text-primary transition-[color] duration-300 ease-linear"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

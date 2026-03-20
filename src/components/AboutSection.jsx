@@ -24,9 +24,9 @@ export const AboutSection = () => {
           <p className="text-muted-foreground">
             I like working across the stack, from translating ideas into clean
             interfaces to handling APIs, deployment workflows, and developer
-            tooling. I bring a hands-on approach to shipping features,
-            improving usability, and learning quickly in environments where
-            product thinking, adaptability, and execution all matter.
+            tooling. I bring a hands-on approach to shipping features, improving
+            usability, and learning quickly in environments where product
+            thinking, adaptability, and execution all matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-4">
             <a href="#contact" className="cosmic-button">
@@ -64,7 +64,9 @@ export const AboutSection = () => {
                 <User className="h-6 w-6 text-primary"></User>
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Collaboration & Product Thinking</h4>
+                <h4 className="font-semibold text-lg">
+                  Collaboration & Product Thinking
+                </h4>
                 <p className="text-muted-foreground">
                   Turning requirements into clear, usable features by combining
                   problem solving, communication, and an iterative development
@@ -80,7 +82,9 @@ export const AboutSection = () => {
                 <Briefcase className="h-6 w-6 text-primary"></Briefcase>
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Backend & Developer Tools</h4>
+                <h4 className="font-semibold text-lg">
+                  Backend & Developer Tools
+                </h4>
                 <p className="text-muted-foreground">
                   Working with Node.js, Python, Git, Linux, Docker, and cloud
                   tooling to support application logic, automation, deployment,
