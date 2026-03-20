@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
       onClick={toggleTheme}
       aria-label="Toggle theme"
       className={cn(
-        "fixed max-sm top-4 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed max-sm top-4 right-5 z-50 p-2 rounded-full cursor-pointer transition-colors duration-300",
         "focus:outline-hidden",
       )}
     >

@@ -12,25 +12,29 @@ export const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6">
           <h3 className="font-semibold text-2xl">
-            Passionate Web Developer and retard
+            Full-Stack Developer Focused on Practical, User-Centered Products
           </h3>
           <p className="text-muted-foreground">
-            i’ve been using Kilo Code in VS Code since August and did some solid
-            projects with it. the extension is free and you can hook up pretty
-            much any model (Claude, Gemini, Grok, DeepSeek, local ones…) and
+            I am a software developer who enjoys building responsive web
+            applications, polished user interfaces, and tools that solve real
+            problems. My work is centered on modern JavaScript development with
+            React on the frontend and Node.js and Python for backend logic,
+            integrations, and automation.
           </p>
           <p className="text-muted-foreground">
-            I bet I could do a lot better if I did, but I refuse to pay for it
-            because it just seems like a waste of money when I can just be a
-            shitty programmer instead and not have to worry about paying.
-            fefefff ddcdcdcdccdcsdsdsdsdsdsdsdsd sdsd
+            I like working across the stack, from translating ideas into clean
+            interfaces to handling APIs, deployment workflows, and developer
+            tooling. I bring a hands-on approach to shipping features,
+            improving usability, and learning quickly in environments where
+            product thinking, adaptability, and execution all matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-4">
             <a href="#contact" className="cosmic-button">
               Get In Touch
             </a>
             <a
-              href=""
+              href="/Jostes-Developer.pdf"
+              download="Kevin-J-Jostes-Resume.pdf"
               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 text-center"
             >
               Download CV
@@ -44,11 +48,11 @@ export const AboutSection = () => {
                 <Code className="h-6 w-6 text-primary"></Code>
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Devlopment</h4>
+                <h4 className="font-semibold text-lg">Frontend Development</h4>
                 <p className="text-muted-foreground">
-                  creating responsive and user-friendly websites using the
-                  latest technologies and best practices to ensure optimal
-                  performance and user experience.
+                  Building responsive interfaces with React, JavaScript, and
+                  modern CSS while focusing on usability, accessibility, and
+                  performance across desktop and mobile experiences.
                 </p>
               </div>
             </div>
@@ -60,11 +64,11 @@ export const AboutSection = () => {
                 <User className="h-6 w-6 text-primary"></User>
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Devlopment</h4>
+                <h4 className="font-semibold text-lg">Collaboration & Product Thinking</h4>
                 <p className="text-muted-foreground">
-                  creating responsive and user-friendly websites using the
-                  latest technologies and best practices to ensure optimal
-                  performance and user experience.
+                  Turning requirements into clear, usable features by combining
+                  problem solving, communication, and an iterative development
+                  process that keeps the user experience at the center.
                 </p>
               </div>
             </div>
@@ -76,11 +80,11 @@ export const AboutSection = () => {
                 <Briefcase className="h-6 w-6 text-primary"></Briefcase>
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Devlopment</h4>
+                <h4 className="font-semibold text-lg">Backend & Developer Tools</h4>
                 <p className="text-muted-foreground">
-                  creating responsive and user-friendly websites using the
-                  latest technologies and best practices to ensure optimal
-                  performance and user experience.
+                  Working with Node.js, Python, Git, Linux, Docker, and cloud
+                  tooling to support application logic, automation, deployment,
+                  and maintainable development workflows.
                 </p>
               </div>
             </div>

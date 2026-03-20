@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>KJ favicon</title>
+  <desc>Monogram favicon for Kevin Jostes</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#e9d5ff" stop-opacity="0.92" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)" />
+  <text
+    x="21"
+    y="42"
+    text-anchor="middle"
+    font-size="27"
+    font-weight="800"
+    font-family="Inter, Arial, sans-serif"
+    fill="url(#stroke)"
+  >
+    K
+  </text>
+  <text
+    x="43"
+    y="42"
+    text-anchor="middle"
+    font-size="27"
+    font-weight="800"
+    font-family="Inter, Arial, sans-serif"
+    fill="url(#stroke)"
+  >
+    J
+  </text>
+</svg>

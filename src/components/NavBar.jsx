@@ -59,7 +59,7 @@ export const NavBar = () => {
             <span
               className={cn(
                 "text-glow transition-colors duration-300",
-                isDarkMode ? "text-primary" : "text-foreground",
+                isDarkMode ? "text-white" : "text-foreground",
               )}
             >
               Kevin Jostes
@@ -82,7 +82,7 @@ export const NavBar = () => {
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-full transition-colors duration-300 hover:bg-background/80 focus:outline-none focus:ring-0 active:outline-none"
+            className="p-2 cursor-pointer rounded-full transition-colors duration-300 hover:bg-background/80 focus:outline-none focus:ring-0 active:outline-none"
           >
             {isDarkMode ? (
               <Sun className="h-5 w-5 text-yellow-300" />
