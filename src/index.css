@@ -98,7 +98,31 @@
    body{
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
-  }
+   }
+   button,
+   button:focus,
+   button:focus-visible,
+   button:active,
+   button:focus-within {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+   }
+   
+   button * {
+    outline: 0 !important;
+    box-shadow: none !important;
+   }
+   
+   button:focus *,
+   button:focus-visible *,
+   button:active * {
+    outline: 0 !important;
+    box-shadow: none !important;
+   }
 }
 /* utilizy class to add to tailwind */
 @utility container{
@@ -126,7 +150,12 @@
   /* this applies the base relative from tailwind to the element so that the text shadow can be applied to it and not affect other elements around it */
   @apply relative;
 
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  text-shadow: 0 0 8px hsl(var(--foreground) / 0.12);
+  transition: text-shadow 300ms ease;
+}
+
+.dark .text-glow {
+  text-shadow: 0 0 18px hsl(var(--primary) / 0.55);
 }
 
 @utility card-hover{

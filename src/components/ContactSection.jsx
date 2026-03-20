@@ -1,12 +1,59 @@
+import { useState } from "react";
 import { Linkedin, Mail, MapIcon, Phone, Send } from "lucide-react";
 import { cn } from "../lib/utils";
 
 export const ContactSection = () => {
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState({ type: "idle", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically handle form submission, e.g., send data to an API
-    alert("Message sent! (This is just a placeholder)");
+
+    if (!formEndpoint) {
+      setStatus({
+        type: "error",
+        message:
+          "Form endpoint is missing. Add VITE_FORMSPREE_ENDPOINT to your environment before submitting.",
+      });
+      return;
+    }
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      setIsSubmitting(true);
+      setStatus({ type: "idle", message: "" });
+
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message.");
+      }
+
+      form.reset();
+      setStatus({
+        type: "success",
+        message: "Message sent successfully. I will get back to you soon.",
+      });
+    } catch {
+      setStatus({
+        type: "error",
+        message:
+          "Something went wrong while sending your message. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -77,7 +124,7 @@ export const ContactSection = () => {
           </div>
           <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a message</h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -122,17 +169,32 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
+                  rows="5"
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
+              {status.message ? (
+                <p
+                  className={cn(
+                    "text-sm rounded-md border px-4 py-3 text-left",
+                    status.type === "success"
+                      ? "border-green-500/30 bg-green-500/10 text-green-600 dark:text-green-400"
+                      : "border-red-500/30 bg-red-500/10 text-red-600 dark:text-red-400",
+                  )}
+                >
+                  {status.message}
+                </p>
+              ) : null}
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button cursor-pointer w-full flex items-center gap-2 justify-center",
+                  "cosmic-button w-full flex items-center gap-2 justify-center",
+                  isSubmitting && "cursor-not-allowed opacity-70",
                 )}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <Send></Send>
               </button>
             </form>
