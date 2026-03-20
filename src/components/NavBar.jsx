@@ -37,13 +37,12 @@ export const NavBar = () => {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-    if (metaThemeColor) {
-      metaThemeColor.setAttribute(
-        "content",
-        isDarkMode ? "#060b15" : "#f8fafc",
-      );
-    }
+    const existing = document.querySelector('meta[name="theme-color"]');
+    if (existing) existing.remove();
+    const newMeta = document.createElement("meta");
+    newMeta.name = "theme-color";
+    newMeta.content = isDarkMode ? "#060b15" : "#f8fafc";
+    document.head.appendChild(newMeta);
   }, [isDarkMode]);
 
   const toggleTheme = () => setIsDarkMode((v) => !v);
