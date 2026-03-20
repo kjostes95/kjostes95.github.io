@@ -45,8 +45,12 @@ export const StarBackground = () => {
     generateStars();
     generateMeteors();
 
+    let lastWidth = window.innerWidth;
     const handleResize = () => {
-      generateStars();
+      if (window.innerWidth !== lastWidth) {
+        lastWidth = window.innerWidth;
+        generateStars();
+      }
     };
     window.addEventListener("resize", handleResize);
 

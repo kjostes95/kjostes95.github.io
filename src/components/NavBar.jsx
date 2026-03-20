@@ -37,6 +37,13 @@ export const NavBar = () => {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        isDarkMode ? "#060b15" : "#f8fafc",
+      );
+    }
   }, [isDarkMode]);
 
   const toggleTheme = () => setIsDarkMode((v) => !v);
