@@ -65,7 +65,7 @@ export const ContactSection = () => {
           I'll get back to you as soon as possible.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          <div className="space-y-8 order-2 md:order-1">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
@@ -122,7 +122,7 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+          <div className="bg-card p-8 rounded-lg shadow-xs order-1 md:order-2">
             <h3 className="text-2xl font-semibold mb-6">Send a message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
