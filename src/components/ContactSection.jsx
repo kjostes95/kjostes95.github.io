@@ -65,7 +65,7 @@ export const ContactSection = () => {
           I'll get back to you as soon as possible.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8 order-2 md:order-1">
+          <div className="space-y-8 order-2 md:order-1 flex flex-col h-full">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
@@ -109,15 +109,17 @@ export const ContactSection = () => {
               </div>
             </div>
 
-            <div className="pt-8">
+            <div className="mt-auto pt-8 border-t border-border/60">
               <h4 className="font-medium mb-4">Connect with me</h4>
-              <div className="flex space-4 justify-center">
+              <div className="flex gap-3 justify-start">
                 <a
                   href="https://www.linkedin.com/in/kevinjjostes/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-4 py-2 text-sm text-primary hover:bg-primary/10 transition-colors"
                 >
-                  <Linkedin> </Linkedin>
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
                 </a>
               </div>
             </div>

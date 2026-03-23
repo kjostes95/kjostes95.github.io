@@ -18,15 +18,17 @@ export const AboutSection = () => {
             I am a software developer who enjoys building responsive web
             applications, polished user interfaces, and tools that solve real
             problems. My work is centered on modern JavaScript development with
-            React on the frontend and Node.js and Python for backend logic,
-            integrations, and automation.
+            different frameworks like React and Vue. I also have experience with
+            backend development using C# and SQL, and I am always eager to learn
+            new technologies and best practices.
           </p>
           <p className="text-muted-foreground">
             I like working across the stack, from translating ideas into clean
             interfaces to handling APIs, deployment workflows, and developer
             tooling. I bring a hands-on approach to shipping features, improving
-            usability, and learning quickly in environments where product
-            thinking, adaptability, and execution all matter.
+            usability, and learning quickly in environments especially in where
+            teamwork, product thinking, adaptability, and execution all play a
+            key role.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-4">
             <a href="#contact" className="cosmic-button">
@@ -50,9 +52,10 @@ export const AboutSection = () => {
               <div className="text-left">
                 <h4 className="font-semibold text-lg">Frontend Development</h4>
                 <p className="text-muted-foreground">
-                  Building responsive interfaces with React, JavaScript, and
-                  modern CSS while focusing on usability, accessibility, and
-                  performance across desktop and mobile experiences.
+                  Building responsive interfaces with modern frameworks,
+                  JavaScript, and CSS while focusing on usability,
+                  accessibility, and performance across desktop and mobile
+                  experiences.
                 </p>
               </div>
             </div>
@@ -86,9 +89,9 @@ export const AboutSection = () => {
                   Backend & Developer Tools
                 </h4>
                 <p className="text-muted-foreground">
-                  Working with Node.js, Python, Git, Linux, Docker, and cloud
-                  tooling to support application logic, automation, deployment,
-                  and maintainable development workflows.
+                  Building backend functionality with C#, SQL, Node.js, and
+                  Python while using Git, and Azure to support APIs, automation,
+                  and maintainable workflows.
                 </p>
               </div>
             </div>

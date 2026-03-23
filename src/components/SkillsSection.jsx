@@ -4,18 +4,43 @@ const skills = [
   { name: "HTML/CSS", level: 95, category: "Frontend" },
   { name: "JavaScript", level: 90, category: "Frontend" },
   { name: "React", level: 85, category: "Frontend" },
+  { name: "Vue", level: 80, category: "Frontend" },
+  { name: "JQuery", level: 85, category: "Frontend" },
+  { name: "Usability Testing", level: 80, category: "Frontend" },
+  { name: "Bootstrap", level: 85, category: "Frontend" },
+  { name: "Tailwind", level: 85, category: "Frontend" },
 
   // backend
   { name: "Node.js", level: 80, category: "Backend" },
-  { name: "Python", level: 75, category: "Backend" },
+  { name: "C#", level: 80, category: "Backend" },
+
+  { name: "Python", level: 70, category: "Backend" },
+  { name: "SQL", level: 75, category: "Backend" },
+  { name: "Entity Framework", level: 70, category: "Backend" },
+
+  { name: "REST", level: 80, category: "Backend" },
 
   // tools
   { name: "Git", level: 90, category: "Tools" },
-  { name: "Docker", level: 70, category: "Tools" },
-  { name: "AWS", level: 65, category: "Tools" },
+  { name: "FIGMA", level: 90, category: "Tools" },
+  { name: "Storybook", level: 90, category: "Tools" },
+
+  { name: "AI Prompting", level: 90, category: "Tools" },
+
+  { name: "Visual Studios Code", level: 80, category: "Tools" },
+  { name: "Azure", level: 60, category: "Tools" },
+  { name: "Windows", level: 100, category: "Tools" },
+  { name: "macOS", level: 90, category: "Tools" },
   { name: "Linux", level: 80, category: "Tools" },
+
+  //Non technical
+  { name: "Communication", level: 100, category: "Non-Technical" },
+  { name: "Collaboration", level: 100, category: "Non-Technical" },
+  { name: "Problem Solving", level: 100, category: "Non-Technical" },
+  { name: "Product Thinking", level: 100, category: "Non-Technical" },
+  { name: "Documentation", level: 100, category: "Non-Technical" },
 ];
-const categories = ["All", "Frontend", "Backend", "Tools"];
+const categories = ["All", "Frontend", "Backend", "Tools", "Non-Technical"];
 export const SkillsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   return (
