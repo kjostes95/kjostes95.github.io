@@ -34,13 +34,13 @@ const skills = [
   { name: "Linux", level: 80, category: "Tools" },
 
   //Non technical
-  { name: "Communication", level: 100, category: "Non-Technical" },
-  { name: "Collaboration", level: 100, category: "Non-Technical" },
-  { name: "Problem Solving", level: 100, category: "Non-Technical" },
-  { name: "Product Thinking", level: 100, category: "Non-Technical" },
-  { name: "Documentation", level: 100, category: "Non-Technical" },
+  { name: "Communication", level: 100, category: "Soft-Skills" },
+  { name: "Collaboration", level: 100, category: "Soft-Skills" },
+  { name: "Problem Solving", level: 100, category: "Soft-Skills" },
+  { name: "Product Thinking", level: 100, category: "Soft-Skills" },
+  { name: "Documentation", level: 100, category: "Soft-Skills" },
 ];
-const categories = ["All", "Frontend", "Backend", "Tools", "Non-Technical"];
+const categories = ["All", "Frontend", "Backend", "Tools", "Soft-Skills"];
 export const SkillsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   return (

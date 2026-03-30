@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Movie Favorite App",
     description:
-      "An application that calls a MovieDb API to get movie results and allows the user to favorite them.",
+      "An application that calls a MovieDb API to get movie results and allows the user to search and favorite them.",
     image: "/projects/MovieApp.png",
     tags: ["React", "JavaScript", "REST API", "Tailwind", "GitHub Pagess"],
     demoUrl: "https://kevinjjostes.com/Movie-Favorite-App/",
@@ -20,6 +20,22 @@ const projects = [
   },
   {
     id: 2,
+    title: "Cover Letter Generator Chrome Extension",
+    description:
+      "A Chrome extension that helps you create tailored cover letters for job applications by leveraging your resume and the job listing details.",
+    image: "/projects/CoverLetterExtension.svg",
+    tags: [
+      "TypeScript",
+      "JavaScript",
+      "REST API",
+      "OpenAi",
+      "Chrome Extension APIs",
+    ],
+    // demoUrl: "https://kevinjjostes.com/Movie-Favorite-App/",
+    repoUrl: "https://github.com/kjostes95/Cover-Letter-Extension",
+  },
+  {
+    id: 3,
     title: "Seranova Design System",
     description:
       "A design system of resuable Vue components to be easily used and maintained. Company's webpage was built with Hubspot. Includes AI chatbot integration.",
@@ -33,7 +49,7 @@ const projects = [
     repoUrl: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Car Capital Deals",
     description:
       "Full-spectrum solution for independent and franchise dealers ready to drive more sales and build smarter portfolios. Flexible, data-driven financing with automated decisions and tools that help dealers win more approvals without sacrificing control.",
