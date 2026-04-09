@@ -68,12 +68,12 @@ export const ContactSection = () => {
           <div className="space-y-8 order-2 md:order-1 flex flex-col h-full">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+              <div className="grid grid-cols-[3.5rem_1fr] items-start gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary"></Mail>
                 </div>
-                <div>
-                  <h4>Email</h4>
+                <div className="pt-1 text-left">
+                  <h4 className="font-medium leading-none mb-2">Email</h4>
                   <a
                     href="mailto:Kjostes95@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -82,12 +82,12 @@ export const ContactSection = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+              <div className="grid grid-cols-[3.5rem_1fr] items-start gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary"></Phone>
                 </div>
-                <div>
-                  <h4>Phone</h4>
+                <div className="pt-1 text-left">
+                  <h4 className="font-medium leading-none mb-2">Phone</h4>
                   <a
                     href="tel:+19727959370"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -96,15 +96,15 @@ export const ContactSection = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+              <div className="grid grid-cols-[3.5rem_1fr] items-start gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <MapIcon className="h-6 w-6 text-primary"></MapIcon>
                 </div>
-                <div>
-                  <h4>Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="pt-1 text-left">
+                  <h4 className="font-medium leading-none mb-2">Location</h4>
+                  <span className="text-muted-foreground transition-colors">
                     DFW, Texas
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
